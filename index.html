@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git & GitHub - Présentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2b3137 0%, #1a1e22 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.3em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 60px 40px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .section p {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+            padding: 30px;
+            border-radius: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-left: 5px solid #667eea;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .feature-card h3 {
+            color: #2b3137;
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            font-size: 1em;
+            color: #666;
+        }
+
+        .cta-section {
+            text-align: center;
+            padding: 50px 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0 -40px -60px -40px;
+        }
+
+        .btn-activity {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 18px 50px;
+            font-size: 1.3em;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-activity:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+            background: #f8f9fa;
+        }
+
+        .btn-activity:active {
+            transform: scale(0.98);
+        }
+
+        .logo {
+            font-size: 4em;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 40px 20px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🚀</div>
+            <h1>Git & GitHub</h1>
+            <p>Maîtrisez le contrôle de version et la collaboration</p>
+        </header>
+
+        <div class="content">
+            <div class="section">
+                <h2>Qu'est-ce que Git ?</h2>
+                <p>Git est un système de contrôle de version distribué qui permet aux développeurs de suivre les modifications apportées au code source au fil du temps. Créé par Linus Torvalds en 2005, Git est devenu l'outil de référence pour la gestion de versions dans le développement logiciel moderne.</p>
+                <p>Avec Git, vous pouvez facilement revenir à des versions antérieures de votre code, travailler sur différentes branches en parallèle, et collaborer efficacement avec d'autres développeurs.</p>
+            </div>
+
+            <div class="section">
+                <h2>Qu'est-ce que GitHub ?</h2>
+                <p>GitHub est une plateforme d'hébergement de code basée sur Git qui facilite la collaboration entre développeurs. Lancée en 2008, GitHub est devenue la plus grande communauté de développeurs au monde avec des millions de projets open source.</p>
+                <p>GitHub offre bien plus qu'un simple hébergement de dépôts Git : gestion de projets, suivi des bugs, révision de code, intégration continue, et bien plus encore.</p>
+            </div>
+
+            <div class="section">
+                <h2>Fonctionnalités principales</h2>
+                <div class="features">
+                    <div class="feature-card">
+                        <h3>📦 Dépôts</h3>
+                        <p>Stockez et organisez vos projets avec un historique complet des modifications.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🌿 Branches</h3>
+                        <p>Développez de nouvelles fonctionnalités sans affecter le code principal.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🔄 Pull Requests</h3>
+                        <p>Proposez, discutez et fusionnez vos modifications avec l'équipe.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>👥 Collaboration</h3>
+                        <p>Travaillez ensemble sur des projets avec des outils de révision de code.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🔍 Issues</h3>
+                        <p>Suivez les bugs, les tâches et les améliorations de votre projet.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>⚡ Actions</h3>
+                        <p>Automatisez vos workflows avec CI/CD intégré directement dans GitHub.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <button class="btn-activity" onclick="alert('Découvrez votre activité Git et GitHub !')">
+                Activité
+            </button>
+        </div>
+    </div>
+</body>
+</html>
